@@ -1,3 +1,6 @@
+// This code is copied and pasted dircetly from the Tailwind.css site. They have a lot of different UI blockl which we can copy and paste and start using them immediately.
+// Additionally, There are few icons, which you can easily install from npm install ....
+
 import {
   CloudArrowUpIcon,
   LockClosedIcon,

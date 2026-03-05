@@ -1,3 +1,6 @@
+// We have created a resuable card component, and also imprted another component - Button.
+// Used the props via destructuring it, right in the function, and used it later in the return section.
+
 import Button from "./Button";
 
 function Card({ title = "Card Title" }) {
