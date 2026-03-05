@@ -231,22 +231,147 @@ npm run preview
 
 ## 8️⃣ Important Commands Summary
 
-| Command                | Purpose                  |
-| ---------------------- | ------------------------ |
-| npm create vite@latest | Create project           |
-| npm install            | Install dependencies     |
-| npm run dev            | Start dev server         |
-| npm run build          | Production build         |
-| npm run preview        | Preview production build |
+| Command | Purpose |
+|--------|--------|
+| npm create vite@latest | Create project |
+| npm install | Install dependencies |
+| npm run dev | Start dev server |
+| npm run build | Production build |
+| npm run preview | Preview production build |
 
 ---
 
 ## 🧠 Mental Model
 
-- index.html → has root div
-- main.jsx → injects App into root
-- App.jsx → your UI
-- Vite → dev server + bundler
-- package.json → manages dependencies + scripts
+- index.html → has root div  
+- main.jsx → injects App into root  
+- App.jsx → your UI  
+- Vite → dev server + bundler  
+- package.json → manages dependencies + scripts  
 
 ---
+
+# 9️⃣ Using Bun (Modern Alternative to Node + npm)
+
+## What is Bun?
+
+Bun is a modern **JavaScript runtime and package manager** that can replace:
+
+- Node.js
+- npm / yarn
+- bundlers
+
+Bun is written in **Zig**, which makes it extremely fast.
+
+---
+
+## 🧠 Key Idea
+
+Everything we do using **Node + npm** can also be done using **Bun**.
+
+Example:
+
+| Node / npm | Bun |
+|-------------|-----|
+| npm install | bun install |
+| npm run dev | bun run dev |
+| npx create | bun create |
+
+So both ecosystems can be used **interchangeably**.
+
+---
+
+## ⚡ Why Bun is Getting Popular
+
+Bun is gaining popularity because it is **much faster than traditional Node.js tooling**.
+
+Benefits:
+
+- Faster package installation
+- Faster dev server startup
+- Built-in bundler, test runner and package manager
+- Lower memory usage
+
+Because of this, many modern JavaScript projects are starting to adopt Bun.
+
+---
+
+## 📜 Brief History
+
+- **2022** → Bun was introduced as a fast alternative to Node.js tooling.
+- It aims to simplify the JavaScript ecosystem by combining multiple tools into **one runtime**.
+- Today it works well with modern frameworks like React and Vite.
+
+---
+
+## 🛠 Install Bun
+
+Official website:
+
+https://bun.sh
+
+Install using terminal:
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+Verify installation:
+
+```bash
+bun -v
+```
+
+---
+
+## 🚀 Create Vite Project Using Bun
+
+Instead of npm:
+
+```bash
+bun create vite
+```
+
+Follow prompts:
+
+- Project Name → your-app-name
+- Framework → React
+- Variant → JavaScript / TypeScript
+
+---
+
+### Create Inside Existing Folder
+
+Use `.` to use the current directory.
+
+```bash
+bun create vite .
+```
+
+---
+
+## ▶️ Run the Project Using Bun
+
+Install dependencies:
+
+```bash
+bun install
+```
+
+Start dev server:
+
+```bash
+bun run dev
+```
+
+---
+
+## 🧠 Quick Comparison
+
+| Tool | Role |
+|-----|------|
+| Node.js | JavaScript runtime |
+| npm | Package manager |
+| Bun | Runtime + package manager + bundler |
+
+Bun can replace **Node + npm in many cases**, but Node.js is still the most widely used runtime in production today.
