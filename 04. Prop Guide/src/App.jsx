@@ -15,6 +15,8 @@ import Test2 from "./Practice/Test2.jsx";
 import Test3 from "./Practice/Test3.jsx";
 import Test4 from "./Practice/Test4.jsx";
 import { Test4Provider } from "./context/Test4Context.jsx";
+import { Test5Provider } from "./context/Test5Context.jsx";
+import Test5 from "./Practice/Test5.jsx";
 
 function Navigation() {
   const isDark = true;
@@ -98,6 +100,11 @@ function AppContent() {
               <Test4Provider>
                 <Test4 />
               </Test4Provider>
+            </div>
+            <div id="basic" className="scroll-mt-200">
+              <Test5Provider>
+                <Test5 />
+              </Test5Provider>
             </div>
           </div>
           <footer
