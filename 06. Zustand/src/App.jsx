@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./components/Counter.jsx";
+import Posts from "./components/Posts.jsx";
 
 // Zustand is one of the state management library which makes the state management feel like nothing.
 // We have seen context-API which is again a state management option, and similarly we ahve redux, redux-toolkti, and the best ne among all zustand
@@ -12,6 +13,7 @@ function App() {
     <div>
       <div>Zustand</div>
       <Counter />
+      <Posts />
     </div>
   );
 }
